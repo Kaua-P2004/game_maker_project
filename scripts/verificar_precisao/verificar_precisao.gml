@@ -33,16 +33,35 @@ function combat_damage_player(_amount) {
 	}
 }
 
-function combat_hit_enemy(_amount) {
+function combat_hit_enemy(_amount, _score_amount) {
+	if (global.game_over || global.run_completed || global.enemy_hp <= 0)
+		return;
+
 	global.enemy_hp = max(0, global.enemy_hp - _amount);
 	global.enemy_flash = 8;
+	global.combo++;
+	global.score += _score_amount * global.combo;
+	global.max_combo = max(global.max_combo, global.combo);
 
 	if (global.enemy_hp <= 0) {
 		global.enemies_defeated++;
-		global.enemy_variant++;
-		global.enemy_max_hp = 100 + 10 * floor(global.enemies_defeated / 3);
-		global.enemy_hp = global.enemy_max_hp;
+		global.phase_cleared = true;
+		global.run_completed = true;
+		global.unlocked_phase = max(global.unlocked_phase, min(global.current_selection + 1, 2));
+		audio_stop_all();
+		if (global.song_to_play == obj_musica_desordem)
+			video_close();
+		room_goto(rm_resultado);
 	}
+}
+
+function combat_prepare_enemy(_chart_data) {
+	var chart_note_count = 0;
+	for (var i = 0; i < array_length(_chart_data); i++)
+		chart_note_count += array_length(_chart_data[i][$ "notes"]);
+
+	global.enemy_max_hp = ceil(chart_note_count * 34 * 0.4);
+	global.enemy_hp = global.enemy_max_hp;
 }
 
 // Verifica a precisão das notas do tipo 1
@@ -59,8 +78,7 @@ function verificar_precisao_1(_queue) {
 				instance_create_layer(inst.x, global.judgement_line_y, "camada_notas", obj_acerto_bom);
 				instance_destroy(inst);
 				
-				combat_hit_enemy(22);
-				global.combo++;
+				combat_hit_enemy(22, 25);
 				
 				//show_debug_message("BOM");
 			
@@ -70,8 +88,7 @@ function verificar_precisao_1(_queue) {
 				instance_create_layer(inst.x, global.judgement_line_y, "camada_notas", obj_acerto_perfeito);
 				instance_destroy(inst);
 				
-				combat_hit_enemy(34);
-				global.combo++;
+				combat_hit_enemy(34, 50);
 				
 				//show_debug_message("PERFEITO");
 			
@@ -106,8 +123,7 @@ function verificar_precisao_2(_queue) {
 				instance_create_layer(inst.x, global.judgement_line_y, "camada_notas", obj_acerto_perfeito);
 				instance_destroy(inst);
 				
-				combat_hit_enemy(34);
-				global.combo++;
+				combat_hit_enemy(34, 50);
 				
 				//show_debug_message("SUSTENTADA PERFEITA");
 			}

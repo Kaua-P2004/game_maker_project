@@ -8,6 +8,7 @@ draw_text(80, 95, "ESCOLHA SUA MÚSICA");
 draw_set_font(fnt_texto_pequeno);
 draw_set_color(make_color_rgb(185, 205, 230));
 draw_text(80, 145, "CIMA / BAIXO para escolher   -   ENTER para lutar");
+draw_text(80, 170, "Derrote o inimigo para liberar a próxima fase");
 
 for (var i = 0; i < array_length(data); i++) {
 	var row_y = 275 + 72 * i;
@@ -20,8 +21,13 @@ for (var i = 0; i < array_length(data); i++) {
 
 	draw_set_color(c_white);
 	draw_text(150, row_y, data[i][$ "name"]);
-	draw_set_color(make_color_rgb(190, 200, 220));
-	draw_text(150, row_y + 30, data[i][$ "composer"] + "   |   NÍVEL " + string(data[i][$ "level"]));
+	if (i <= global.unlocked_phase) {
+		draw_set_color(make_color_rgb(190, 200, 220));
+		draw_text(150, row_y + 30, data[i][$ "composer"] + "   |   NÍVEL " + string(data[i][$ "level"]));
+	} else {
+		draw_set_color(make_color_rgb(120, 130, 150));
+		draw_text(150, row_y + 30, "BLOQUEADA");
+	}
 }
 
 draw_set_color(c_white);

@@ -120,7 +120,7 @@
   "name":"fnt_texto",
   "parent":{
     "name":"Fontes",
-    "path":"folders/Fonts.yy",
+    "path":"folders/Fontes.yy",
   },
   "pointRounding":0,
   "ranges":[

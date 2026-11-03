@@ -20,8 +20,8 @@ id_song_map = [
 
 id_preview_spr_map = [
   spr_fundo_wings_of_piano,
-  spr_fundo_passo_final,
-  spr_fundo_desordem
+  spr_fundo_desordem,
+  spr_fundo_passo_final
 ];
 
 id_song_obj_map = [
@@ -29,6 +29,9 @@ id_song_obj_map = [
   obj_musica_passo_final,
   obj_musica_desordem
 ];
+
+if (!variable_global_exists("unlocked_phase"))
+  global.unlocked_phase = 0;
 
 if (!variable_global_exists("current_selection"))
   global.current_selection = 0;

@@ -55,7 +55,7 @@ if (json_pos >= 0 && next_time_to_spwan - current_music_position <= global.judge
 // A reprodução terminou
 if (global.game_started && !audio_is_playing(global.game_music)) {
 	video_close();
-	global.image_to_display = spr_fundo_desordem;
+	global.image_to_display = spr_fundo_passo_final;
 	global.run_completed = true;
 	room_goto(rm_resultado);
 }

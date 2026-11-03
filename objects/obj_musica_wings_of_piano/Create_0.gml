@@ -10,6 +10,7 @@ while(!file_text_eof(file)) {
 file_text_close(file);
 
 data = json_parse(json);
+combat_prepare_enemy(data);
 
 // Inicializa os dados
 global.game_started = false;

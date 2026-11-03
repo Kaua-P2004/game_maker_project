@@ -120,7 +120,7 @@
   "name":"fnt_texto_pequeno",
   "parent":{
     "name":"Fontes",
-    "path":"folders/Fonts.yy",
+    "path":"folders/Fontes.yy",
   },
   "pointRounding":0,
   "ranges":[

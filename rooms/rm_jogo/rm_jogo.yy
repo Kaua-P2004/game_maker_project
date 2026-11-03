@@ -19,7 +19,7 @@
   "name":"rm_jogo",
   "parent":{
     "name":"Salas",
-    "path":"folders/Rooms.yy",
+    "path":"folders/Salas.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

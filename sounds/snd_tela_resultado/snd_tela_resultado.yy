@@ -15,7 +15,7 @@
   "name":"snd_tela_resultado",
   "parent":{
     "name":"Sons",
-    "path":"folders/Sounds.yy",
+    "path":"folders/Sons.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

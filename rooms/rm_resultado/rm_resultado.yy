@@ -18,7 +18,7 @@
   "name":"rm_resultado",
   "parent":{
     "name":"Salas",
-    "path":"folders/Rooms.yy",
+    "path":"folders/Salas.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

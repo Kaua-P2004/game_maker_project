@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"2a270878-34c2-43ee-86f7-71b4f0852a25","name":"2a270878-34c2-43ee-86f7-71b4f0852a25","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f31003a9-72bf-4ea1-a626-226fabab0528","name":"f31003a9-72bf-4ea1-a626-226fabab0528","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":510,
+  "height":408,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"f7da72b1-ced3-42eb-8ac3-5cb5f6f137c7","blendMode":0,"displayName":"default","isLocked":false,"name":"f7da72b1-ced3-42eb-8ac3-5cb5f6f137c7","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"4beb80f8-2492-4ff2-b89f-a787280f7afa","blendMode":0,"displayName":"default","isLocked":false,"name":"4beb80f8-2492-4ff2-b89f-a787280f7afa","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_jogador_esquiva_esquerda",
   "nineSlice":{
@@ -88,14 +88,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2a270878-34c2-43ee-86f7-71b4f0852a25","path":"sprites/spr_jogador_esquiva_esquerda/spr_jogador_esquiva_esquerda.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"5155b273-ce96-4b9e-bab4-807cde87fe78","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f31003a9-72bf-4ea1-a626-226fabab0528","path":"sprites/spr_jogador_esquiva_esquerda/spr_jogador_esquiva_esquerda.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"4dc724ec-11d2-4bd4-bee7-4827a42a091e","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":382,
-    "yorigin":255,
+    "xorigin":0,
+    "yorigin":0,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
@@ -105,5 +105,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":764,
+  "width":611,
 }

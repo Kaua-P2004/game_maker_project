@@ -18,7 +18,7 @@
   "name":"rm_tela_inicial",
   "parent":{
     "name":"Salas",
-    "path":"folders/Rooms.yy",
+    "path":"folders/Salas.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

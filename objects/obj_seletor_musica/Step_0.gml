@@ -1,9 +1,10 @@
+var unlocked_count = min(global.unlocked_phase + 1, array_length(data));
 if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"))) {
-	current_selection = (current_selection + array_length(data) - 1) mod array_length(data);
+	current_selection = (current_selection + unlocked_count - 1) mod unlocked_count;
 }
 
 if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"))) {
-	current_selection = (current_selection + 1) mod array_length(data);
+	current_selection = (current_selection + 1) mod unlocked_count;
 }
 
 if (current_selection != global.current_selection) {

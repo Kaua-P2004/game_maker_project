@@ -22,7 +22,7 @@
   "name":"rm_tutorial",
   "parent":{
     "name":"Salas",
-    "path":"folders/Rooms.yy",
+    "path":"folders/Salas.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

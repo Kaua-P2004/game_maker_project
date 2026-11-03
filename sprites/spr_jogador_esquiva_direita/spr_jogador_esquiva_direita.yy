@@ -12,18 +12,18 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"781b6158-54b8-412c-bee2-9bd164053059","name":"781b6158-54b8-412c-bee2-9bd164053059","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"0eedccf9-e3df-4040-816f-639ab4e75b72","name":"0eedccf9-e3df-4040-816f-639ab4e75b72","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":504,
+  "height":407,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"3742b24a-afcc-408a-980e-43df4a80eb31","blendMode":0,"displayName":"default","isLocked":false,"name":"3742b24a-afcc-408a-980e-43df4a80eb31","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"f4586223-9a6a-43cc-aad0-eb0883cd1dad","blendMode":0,"displayName":"default","isLocked":false,"name":"f4586223-9a6a-43cc-aad0-eb0883cd1dad","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_jogador_esquiva_direita",
   "nineSlice":null,
-  "origin":0,
+  "origin":9,
   "parent":{
     "name":"Sprites",
     "path":"folders/Sprites.yy",
@@ -69,14 +69,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"781b6158-54b8-412c-bee2-9bd164053059","path":"sprites/spr_jogador_esquiva_direita/spr_jogador_esquiva_direita.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"663dba05-e74c-4bea-b303-482f4d2ccf9f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0eedccf9-e3df-4040-816f-639ab4e75b72","path":"sprites/spr_jogador_esquiva_direita/spr_jogador_esquiva_direita.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"43dcbe8c-828a-4e4e-9e49-3bfae5a540eb","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":378,
-    "yorigin":252,
+    "xorigin":0,
+    "yorigin":0,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":757,
+  "width":612,
 }
