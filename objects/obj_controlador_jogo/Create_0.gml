@@ -20,6 +20,8 @@ sprite_straight = spr_jogador_direto;
 sprite_dodge_left = spr_jogador_esquiva_esquerda;
 sprite_dodge_right = spr_jogador_esquiva_direita;
 enemy_sprite_ids = [spr_inimigo_rival, spr_inimigo_campeao, spr_inimigo_sombra];
+enemy_attack_right_ids = [spr_inimigo_rival_ataque_direita, spr_inimigo_campeao_ataque_direita, spr_inimigo_sombra_ataque_direita];
+enemy_attack_left_ids = [spr_inimigo_rival_ataque_esquerda, spr_inimigo_campeao_ataque_esquerda, spr_inimigo_sombra_ataque_esquerda];
 enemy_names = ["Rival", "Campeão", "Sombra"];
 
 key_names = ["A - Soco", "S - Direto", "K - Esquiva E", "L - Esquiva D"];

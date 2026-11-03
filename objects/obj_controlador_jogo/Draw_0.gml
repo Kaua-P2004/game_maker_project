@@ -42,11 +42,18 @@ if (global.combo >= 3) {
 
 var enemy_x = 680;
 var enemy_base_y = 700;
-var enemy_sprite = enemy_sprite_ids[global.current_selection];
+var enemy_index = global.current_selection;
+var enemy_base_sprite = enemy_sprite_ids[enemy_index];
+var enemy_sprite = enemy_base_sprite;
+if (global.player_move == "dodge_left")
+	enemy_sprite = enemy_attack_right_ids[enemy_index];
+else if (global.player_move == "dodge_right")
+	enemy_sprite = enemy_attack_left_ids[enemy_index];
+var enemy_scale = 0.88 * sprite_get_height(enemy_base_sprite) / sprite_get_height(enemy_sprite);
 var enemy_tint = c_white;
 if (global.enemy_flash > 0)
 	enemy_tint = c_yellow;
-draw_sprite_ext(enemy_sprite, 0, enemy_x, enemy_base_y, 0.88, 0.88, 0, enemy_tint, 1);
+draw_sprite_ext(enemy_sprite, 0, enemy_x, enemy_base_y, enemy_scale, enemy_scale, 0, enemy_tint, 1);
 draw_set_color(c_white);
 draw_set_font(fnt_texto);
 draw_text(enemy_x, 217, enemy_names[global.current_selection]);
