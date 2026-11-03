@@ -10,7 +10,7 @@
   "name":"obj_tutorial",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
+    "name":"Objetos",
     "path":"folders/Objects.yy",
   },
   "parentObjectId":null,

@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_tela_resultado",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":7,
+  "conversionMode":0,
+  "duration":16.0,
+  "exportDir":"",
+  "name":"snd_tela_resultado",
+  "parent":{
+    "name":"Sons",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_tela_resultado.wav",
+  "volume":1.0,
+}

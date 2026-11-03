@@ -1,3 +1,3 @@
-/// @description Go to game room
+/// @description Vai para a sala do jogo
 
-room_goto(rm_game);
+room_goto(rm_jogo);

@@ -1,13 +1,13 @@
 
 global.tutorial = true;
 
-draw_set_font(fnt_game_text);
+draw_set_font(fnt_texto);
 
 draw_set_halign(fa_left);
 
-draw_text(obj_note.x+305, obj_note.y-25, "Click");
+draw_text(obj_nota.x+305, obj_nota.y-25, "Toque");
 
-draw_text(obj_hold.x+305, obj_hold.y-25, "Hold");
+draw_text(obj_nota_sustentada.x+305, obj_nota_sustentada.y-25, "Segure");
 
 
-draw_text(obj_hold.x+100-45, obj_hold.y+130, "Press ESC to Exit");
+draw_text(obj_nota_sustentada.x+100-45, obj_nota_sustentada.y+130, "Pressione ESC para sair");

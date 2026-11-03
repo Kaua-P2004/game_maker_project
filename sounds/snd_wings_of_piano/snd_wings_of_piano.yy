@@ -14,7 +14,7 @@
   "exportDir":"",
   "name":"snd_wings_of_piano",
   "parent":{
-    "name":"Sounds",
+    "name":"Sons",
     "path":"folders/Sounds.yy",
   },
   "preload":false,
